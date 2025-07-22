@@ -6,31 +6,31 @@ export const ImpactSection = () => {
       icon: Users,
       number: "2,000+",
       label: "girls reached",
-      color: "text-impact-purple"
+      color: "text-white"
     },
     {
       icon: Package,
       number: "4,500+",
       label: "reusable pads distributed",
-      color: "text-growth-green"
+      color: "text-white"
     },
     {
       icon: TrendingDown,
       number: "30–50%",
       label: "reduction in school absenteeism",
-      color: "text-warm-orange"
+      color: "text-white"
     },
     {
       icon: Recycle,
       number: "540,000+",
       label: "disposable pads saved from landfills",
-      color: "text-impact-purple"
+      color: "text-white"
     },
     {
       icon: School,
       number: "5+",
       label: "active programs in schools",
-      color: "text-growth-green"
+      color: "text-white"
     }
   ];
 

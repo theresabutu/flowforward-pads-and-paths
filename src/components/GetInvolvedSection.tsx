@@ -9,14 +9,14 @@ export const GetInvolvedSection = () => {
       title: "Partner With Us",
       description: "Are you an NGO, school, company, or donor? Let's work together to scale impact.",
       buttonText: "Partner With Us",
-      variant: "impact" as const
+      variant: "pink" as const
     },
     {
       icon: UserPlus,
       title: "Volunteer",
       description: "Join our growing team of changemakers from across Nigeria.",
       buttonText: "Become a Volunteer",
-      variant: "growth" as const
+      variant: "soft" as const
     },
     {
       icon: Heart,

@@ -52,9 +52,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'impact-purple': 'hsl(var(--impact-purple))',
-				'growth-green': 'hsl(var(--growth-green))',
-				'warm-orange': 'hsl(var(--warm-orange))',
+				'brand-pink': 'hsl(var(--brand-pink))',
+				'soft-pink': 'hsl(var(--soft-pink))',
+				'warm-accent': 'hsl(var(--warm-accent))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

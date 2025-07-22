@@ -7,22 +7,22 @@ export const WhatWeDoSection = () => {
       icon: Package,
       title: "Reusable Sanitary Pads",
       description: "We design and distribute high-quality, washable pads that last 12–18 months—saving costs and reducing waste.",
-      color: "text-impact-purple",
-      bgColor: "from-impact-purple/10 to-impact-purple/5"
+      color: "text-brand-pink",
+      bgColor: "from-brand-pink/10 to-brand-pink/5"
     },
     {
       icon: GraduationCap,
       title: "Menstrual Health Education",
       description: "We deliver workshops in schools and communities to teach girls about menstrual hygiene, confidence, and reproductive health.",
-      color: "text-growth-green",
-      bgColor: "from-growth-green/10 to-growth-green/5"
+      color: "text-brand-pink",
+      bgColor: "from-soft-pink/20 to-soft-pink/10"
     },
     {
       icon: Megaphone,
       title: "Advocacy & Awareness",
       description: "We engage parents, teachers, and leaders to break menstrual stigma and promote inclusion.",
-      color: "text-warm-orange",
-      bgColor: "from-warm-orange/10 to-warm-orange/5"
+      color: "text-warm-accent",
+      bgColor: "from-warm-accent/10 to-warm-accent/5"
     }
   ];
 
