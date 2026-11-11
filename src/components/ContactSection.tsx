@@ -1,4 +1,5 @@
 import { Mail, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Music2 } from "lucide-react";
 
 export const ContactSection = () => {
   const contacts = [
@@ -12,19 +13,25 @@ export const ContactSection = () => {
       icon: Instagram,
       label: "Instagram",
       value: "@flowforward",
-      href: "https://instagram.com/flowforward"
+      href: "https://www.instagram.com/flowforward?xtok=MT"
     },
     {
       icon: Facebook,
       label: "Facebook",
       value: "Flowforward",
-      href: "https://facebook.com/flowforward"
+      href: "https://www.facebook.com/share/1CDyBXWUfS/"
     },
     {
       icon: MessageCircle,
       label: "WhatsApp",
       value: "+234 903 881 3259",
-      href: "https://wa.me/2349038813259"
+      href: "https://whatsapp.com/channel/0029VahZHmj47XeKIQqgHq3H"
+    },
+    {
+      icon: Music2,
+      label: "TikTok",
+      value: "@flow_forward",
+      href: "https://www.tiktok.com/@flow_forward"
     }
   ];
 
@@ -36,7 +43,7 @@ export const ContactSection = () => {
           <div className="w-24 h-1 bg-gradient-hero mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div id="contact" className="grid scroll-mt-8 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 max-w-5xl mx-auto">
           {contacts.map((contact, index) => (
             <a
               key={index}

@@ -46,8 +46,10 @@ export const GetInvolvedSection = () => {
                   <h3 className="text-2xl font-bold text-foreground">{way.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{way.description}</p>
                 </div>
-                <Button variant={way.variant} className="w-full">
-                  {way.buttonText}
+                <Button asChild variant={way.variant} className="w-full">
+                  <a href={way.title === "Donate" ? "#donate" : "#contact"}>
+                    {way.buttonText}
+                  </a>
                 </Button>
               </CardContent>
             </Card>

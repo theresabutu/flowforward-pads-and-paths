@@ -73,8 +73,10 @@ export const HeroSlider = ({ slides }: HeroSliderProps) => {
                         {slide.description}
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4">
-                        <Button variant="hero" size="lg">
+                        <Button asChild variant="hero" size="lg">
+                          <a href="#donate">
                           Donate Now
+                          </a>
                         </Button>
                         <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-brand-pink">
                           Join Us
