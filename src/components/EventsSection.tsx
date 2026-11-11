@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 export const EventsSection = () => {
   const pastEvents = [
@@ -44,14 +44,14 @@ export const EventsSection = () => {
     }
   ];
 
-  const upcomingEvents = [
-    {
-      date: "October 2025",
-      title: "Major Community Campaign",
-      description: "Our biggest campaign yet to end period poverty across multiple communities. Join us in making a lasting impact.",
-      image: "/lovable-uploads/4b701004-98e1-4210-a2dd-b80f11a0c45f.png",
-      location: "Multiple Locations"
-    }
+  const importantEvents = [
+    { title: "Dear Girl Child", occasion: "International Day of the Girl Child" },
+    { title: "Dignity in Every Cycle", occasion: "Menstrual Hygiene Day" },
+    { title: "My Body, My Confidence", occasion: "World Health Day" },
+    { title: "Green Periods, Greener Future", occasion: "World Environment Day" },
+    { title: "Every Girl Deserves a Seat in the Classroom", occasion: "International Day of Education" },
+    { title: "The Flowforward Woman", occasion: "International Women's Day" },
+    { title: "Dear Fave, I Have a Question", occasion: "World Mental Health Day" },
   ];
 
   return (
@@ -102,49 +102,23 @@ export const EventsSection = () => {
           </div>
         </div>
 
-        {/* Upcoming Events */}
+        {/* Important Events */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Upcoming Events</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Important Events</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
             <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Join us in our upcoming initiatives to create an even greater impact in the fight against period poverty.
+              Campaign themes inspired by the days that champion girls’ dignity, wellbeing, and opportunity.
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            {upcomingEvents.map((event, index) => (
-              <div key={index} className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl shadow-lg overflow-hidden border border-primary/20">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2">
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="w-full h-64 md:h-80 object-cover"
-                    />
-                  </div>
-                  
-                  <div className="md:w-1/2 p-8">
-                    <div className="flex items-center gap-2 text-primary mb-3">
-                      <Calendar className="w-5 h-5" />
-                      <span className="font-medium">{event.date}</span>
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-foreground mb-4">{event.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      {event.description}
-                    </p>
-                    
-                    <div className="flex items-center gap-2 text-muted-foreground mb-6">
-                      <MapPin className="w-4 h-4" />
-                      <span className="text-sm">{event.location}</span>
-                    </div>
-
-                    <div className="flex items-center gap-2 text-primary">
-                      <Users className="w-4 h-4" />
-                      <span className="text-sm font-medium">Get involved and make a difference</span>
-                    </div>
-                  </div>
+          <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {importantEvents.map((event) => (
+              <article key={event.title} className="flex min-h-36 flex-col justify-between gap-5 rounded-md border border-primary/15 bg-card p-6 shadow-soft">
+                <h3 className="text-xl font-bold leading-snug text-foreground">{event.title}</h3>
+                <div className="flex items-start gap-2 text-primary">
+                  <Calendar aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0" />
+                  <p className="text-sm leading-relaxed">{event.occasion}</p>
                 </div>
               </div>
             ))}
