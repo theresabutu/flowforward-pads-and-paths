@@ -7,6 +7,7 @@ import { EventsSection } from "@/components/EventsSection";
 import { GetInvolvedSection } from "@/components/GetInvolvedSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { FlowzySection } from "@/components/FlowzySection";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <MissionSection />
       <WhatWeDoSection />
       <ImpactSection />
+      <FlowzySection />
       <EventsSection />
       <GetInvolvedSection />
       <ContactSection />
