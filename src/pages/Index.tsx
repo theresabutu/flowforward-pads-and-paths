@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { FlowzySection } from "@/components/FlowzySection";
 import { FaveSection } from "@/components/FaveSection";
 import { DonationSection } from "@/components/DonationSection";
+import { GlobalGoalsSection } from "@/components/GlobalGoalsSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <MissionSection />
       <WhatWeDoSection />
       <ImpactSection />
+      <GlobalGoalsSection />
       <FlowzySection />
       <FaveSection />
       <EventsSection />
