@@ -6,19 +6,19 @@ export const MissionSection = () => {
     {
       icon: Target,
       title: "Our Mission",
-      description: "To ensure that every girl, regardless of background, has access to safe menstrual products, accurate information, and the confidence to live fully.",
+      description: "To empower girls and young women, regardless of their background, with the knowledge, resources, opportunities, and support they need to overcome barriers, unlock their potential, and build fulfilling futures.",
       gradient: "from-brand-pink/10 to-brand-pink/5"
     },
     {
       icon: Eye,
       title: "Our Vision", 
-      description: "A world where menstruation is never a barrier to opportunity and where girls and the planet thrive together.",
+      description: "A world where every girl and young woman has the opportunity to thrive, lead, and shape her future, and where inclusive opportunities and sustainable communities enable everyone to reach their full potential.",
       gradient: "from-soft-pink/20 to-soft-pink/10"
     },
     {
       icon: BookOpen,
       title: "Our Story",
-      description: "Born out of a passion for girl empowerment and sustainability, Flowforward was founded to address the triple threat of period poverty, menstrual illiteracy, and environmental waste. Our team comprises volunteers from across Nigeria, united by the goal to make menstruation safe, dignified, and sustainable.",
+      description: "FlowForward Initiative was born out of a passion for girl empowerment, social inclusion, and sustainable development. What began as a commitment to addressing period poverty, menstrual health illiteracy, and environmental waste has grown into a broader vision of creating opportunities for girls and young women to thrive.\n\nRecognising that the challenges facing girls extend beyond access to menstrual products, we envision a world where every girl has the knowledge, resources, confidence, and support to pursue her aspirations without limitations.\n\nToday, FlowForward brings together passionate volunteers and changemakers from across Nigeria to drive impact through education, health and well-being, economic empowerment, leadership development, innovation, and environmental sustainability.\n\nThrough community-driven initiatives, advocacy, partnerships, and innovative solutions, we are working to break barriers, amplify opportunities, and build stronger, more inclusive communities.\n\nWe believe that when girls move forward, communities move forward. And when communities thrive, the future becomes brighter for everyone.",
       gradient: "from-warm-accent/10 to-warm-accent/5"
     }
   ];
@@ -39,7 +39,7 @@ export const MissionSection = () => {
                   <item.icon className="w-8 h-8 text-brand-pink" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{item.description}</p>
               </CardContent>
             </Card>
           ))}
