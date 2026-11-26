@@ -105,7 +105,7 @@ export const EventsSection = () => {
         {/* Important Events */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Important Events</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Important Events Every Year</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
             <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
               Campaign themes inspired by the days that champion girls’ dignity, wellbeing, and opportunity.
@@ -120,7 +120,7 @@ export const EventsSection = () => {
                   <Calendar aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0" />
                   <p className="text-sm leading-relaxed">{event.occasion}</p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
